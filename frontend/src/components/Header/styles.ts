@@ -6,6 +6,7 @@ export const Container = styled.header`
 
   @media (max-width: 900px) {
     margin: 48px auto 0;
+    width: 90%;
   }
 
   display: flex;

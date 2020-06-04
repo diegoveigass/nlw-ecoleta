@@ -11,6 +11,11 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media (max-width: 900px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const Form = styled.form`
@@ -23,6 +28,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 900px) {
+    display: block;
+    flex-direction: row;
+  }
+
   h1 {
     font-size: 36px;
   }
@@ -32,6 +42,11 @@ export const Form = styled.form`
     min-inline-size: auto;
     border: 0;
 
+    @media (max-width: 900px) {
+      align-items: center;
+      text-align: center;
+    }
+
     legend {
       width: 100%;
       display: flex;
@@ -39,8 +54,18 @@ export const Form = styled.form`
       align-items: center;
       margin-bottom: 40px;
 
+      @media (max-width: 900px) {
+        align-items: center;
+        text-align: center;
+        display: block;
+      }
+
       h2 {
         font-size: 24px;
+        @media (max-width: 900px) {
+          align-items: center;
+          text-align: center;
+        }
       }
 
       span {
@@ -49,6 +74,13 @@ export const Form = styled.form`
         color: #6c6c80;
       }
     }
+  }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    text-align: center;
+    width: 550px;
+    display: block;
   }
 `;
 
@@ -96,8 +128,16 @@ export const FieldGroup = styled.div`
   display: flex;
   flex: 1;
 
+  @media (max-width: 900px) {
+    display: block;
+  }
+
   div + div {
     margin-left: 16px;
+
+    @media (max-width: 900px) {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -106,6 +146,10 @@ export const ListItems = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   list-style: none;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const List = styled.li<ListProps>`

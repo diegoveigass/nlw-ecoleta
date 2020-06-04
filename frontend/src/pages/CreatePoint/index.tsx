@@ -9,6 +9,7 @@ import { useHistory } from 'react-router-dom';
 import { LeafletMouseEvent } from 'leaflet';
 import { TileLayer, Marker } from 'react-leaflet';
 import axios from 'axios';
+import { FiChevronLeft } from 'react-icons/fi';
 import api from '../../services/api';
 
 import {
@@ -187,7 +188,7 @@ const CreatePoint: React.FC = () => {
 
   return (
     <Container>
-      <Header title="Voltar para home" icon />
+      <Header title="Voltar para home" icon={FiChevronLeft} />
 
       <Form onSubmit={handleSubmit}>
         <h1>

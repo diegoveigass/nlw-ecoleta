@@ -60,11 +60,14 @@ export const ButtonIconContainer = styled.View`
   border-radius: 10px;
 `;
 
-export const InputText = styled.TextInput`
+export const PickerContainer = styled.View`
+  width: 100%;
   height: 60px;
   background-color: #fff;
   border-radius: 10px;
+  padding: 0 16px;
   margin-bottom: 8px;
-  padding: 0 24px;
   font-size: 16px;
+  align-items: center;
+  justify-content: center;
 `;

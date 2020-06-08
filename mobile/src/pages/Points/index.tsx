@@ -70,7 +70,9 @@ const Points: React.FC = () => {
         return;
       }
 
-      const location = await Location.getCurrentPositionAsync();
+      const location = await Location.getCurrentPositionAsync({
+        accuracy: Location.Accuracy.High,
+      });
 
       const { latitude, longitude } = location.coords;
 

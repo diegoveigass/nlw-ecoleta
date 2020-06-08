@@ -82,8 +82,6 @@ const Home: React.FC = () => {
       });
   }, [selectedUf]);
 
-  console.log(selectedCity, selectedUf);
-
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}

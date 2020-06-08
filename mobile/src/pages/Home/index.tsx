@@ -50,8 +50,8 @@ const Home: React.FC = () => {
 
   const handleNavigateToPoints = useCallback(() => {
     navigation.navigate('Points', {
-      selectedUf,
-      selectedCity,
+      uf: selectedUf,
+      city: selectedCity,
     });
   }, [navigation, selectedUf, selectedCity]);
 
@@ -81,6 +81,8 @@ const Home: React.FC = () => {
         setCities(cityNames);
       });
   }, [selectedUf]);
+
+  console.log(selectedCity, selectedUf);
 
   return (
     <KeyboardAvoidingView
